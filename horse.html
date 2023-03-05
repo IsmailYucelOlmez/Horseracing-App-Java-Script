@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horseracing</title>
+    <link rel="stylesheet" href="horse.css">
+</head>
+<body>
+    <div class="container">
+            
+            <div class="header-field">
+                  <div class="header-text">
+                        <p>HİPODROM</p>
+                  </div>
+                  <div class="status flex">
+                       <div class="flex mg-10"> <p>Bakiye: </p><p id="remainder">5</p> </div> 
+                       <div class="flex mg-10"> <p>İddia</p><input type="text" placeholder="Ücret Giriniz" id="bet"> </div> 
+                       <div class="horse-selection-field flex">
+
+                        <p>At Seçimi</p>
+                        <div class="horse-selection flex">
+                            <div class="horse-selection-text" onclick="selectHorse(this)">1</div>
+                            <div class="horse-selection-text" onclick="selectHorse(this)">2</div> 
+                            <div class="horse-selection-text" onclick="selectHorse(this)">3</div>
+                            <div class="horse-selection-text" onclick="selectHorse(this)">4</div>
+                            <div class="horse-selection-text" onclick="selectHorse(this)">5</div>
+                            <div class="horse-selection-text" onclick="selectHorse(this)">6</div>
+    
+                        </div>
+                        
+                       </div>
+                  </div>
+                  <div class="start-button-field">
+                        <button class="start-button">Başlat</button>
+                  </div>
+                  
+            </div>
+            <div class="race-field ">
+
+              <div class="race-field-inner">
+
+                <div class="horse-field">
+                    <div class="horse" id="horse-1">1</div>
+                </div>
+                <div class="horse-field">
+                    <div class="horse" id="horse-2">2</div>
+                </div>
+                <div class="horse-field">
+                    <div class="horse" id="horse-3">3</div>   
+                </div>
+                <div class="horse-field">
+                    <div class="horse" id="horse-4">4</div>
+                </div>
+                <div class="horse-field">
+                    <div class="horse" id="horse-5">5</div>
+                </div>
+                <div class="horse-field">
+                    <div class="horse" id="horse-6">6</div>
+                </div>
+              </div>  
+                <div class="finish-line"></div>
+            </div>
+        
+
+             <div class="show-result">
+                <p class="result-text hide"> Yarışı Kaybettiniz </p>
+            </div>
+
+    </div>
+
+
+    <script src="horse.js"></script>
+</body>
+</html>
